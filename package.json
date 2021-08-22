@@ -1,0 +1,55 @@
+{
+  "name": "young-animals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Justin R",
+  "license": "ISC",
+  "proxy": "http://localhost:3500/",
+  "devDependencies": {
+    "concurrently": "4.1.0",
+    "react-scripts": "3.4.1"
+  },
+  "dependencies": {
+    "autoprefixer-stylus": "0.14.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "^7.6.0",
+    "http-proxy-middleware": "^2.0.1",
+    "prop-types": "^15.6.0",
+    "re-base": "4.0.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
+    "serve": "^10.1.2",
+    "stripe": "^8.169.0",
+    "stylus": "0.54.5",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "react-scripts start",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "now-build": "npm run build && mv build dist",
+    "styles:watch": "npm run styles -- -w"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

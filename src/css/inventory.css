@@ -1,0 +1,9 @@
+.inner_div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.stock_img {
+    height: 500px;
+    width: 500px;
+}
