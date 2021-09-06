@@ -1,0 +1,13 @@
+.card {
+    height: 75vh;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+}

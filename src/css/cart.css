@@ -1,0 +1,33 @@
+:root {
+    --darkest: #061539;
+    --dark: #162955;
+    --medium: #4f628e;
+    --light: #7887ab;
+    --gold: #D4B16A;
+  }
+.cart {
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.cart {
+    cursor: pointer;
+}
+.cart > .text {
+    font-size: 16px !important;
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: var(--light);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 105%;
+}
+.cart:hover > .text {
+    visibility: visible;
+}

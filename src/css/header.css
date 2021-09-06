@@ -1,0 +1,38 @@
+:root {
+  --darkest: #061539;
+  --dark: #162955;
+  --medium: #4f628e;
+  --light: #7887ab;
+  --gold: #D4B16A;
+}
+body {
+  background-color: var(--darkest);
+  color: var(--light);
+}
+a {
+  color: var(--medium);
+  text-decoration: none;
+}
+a:hover {
+  color: gold;
+}
+.nav_head ul {
+  list-style-type: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-evenly;
+}
+li {
+  display: inline;
+}
+button {
+  padding: 5px 100px;
+  cursor: pointer;
+  background-color: var(--gold);
+  color: var(--medium);
+  font-family: 'Tourney', cursive;
+}
+
+
+

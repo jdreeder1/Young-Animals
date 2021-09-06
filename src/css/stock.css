@@ -1,0 +1,45 @@
+/*.store_item, .fig {
+    width: 100%;
+}*/
+.fig {
+    width: 300px;
+    position: relative;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.store_item, .panel {
+    height: 300px;
+    width: 300px;
+}
+.store_item:hover {
+    cursor: pointer;
+}
+.panel {
+    opacity: 0;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+.fig .panel:hover {
+    opacity: 1;
+}
+.caption {
+    transform: rotate(-20deg);
+}
+.fig .panel .caption {
+    height: 0;
+    opacity: 1;
+    margin-top: 20vh;
+}
+.fig .panel:hover .caption {
+    opacity: 1;
+}
